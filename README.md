@@ -82,3 +82,27 @@ yarn dev
 > Axios
 > ReactJS
 > Taildwindcss
+
+const
+express = require ('express');
+const
+bodyParser = require( 'body-parser')
+const
+TelegramBot = require( 'node-telegra
+const
+app = express ();
+const
+'token
+const
+• bot = new TelegramBot(token, ‹ poll app.use(bodyParser.json());
+bot on ( 'message', (msg) => {
+if (msg.web_app_data) {
+const data = JSON. parse (msg.web_app_d
+console. 10g (User ${msg.from.id} scor
+bot.sendMessage(msg.chat.id,
+"Your Sc
+}
+}) ;
+app. listen (3000, () => {
+console. log ( 'Server running');
+}) ;
